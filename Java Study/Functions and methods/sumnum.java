@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class sumnum {
 
     public static void SUM(int num1,int num2)
@@ -6,8 +8,11 @@ public class sumnum {
         System.out.println("The sum of two numbers is:"+summ);
     }
     public static void main(String[] args) {
-        int num1=10;
-        int num2=20;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter num1:");
+        int num1=sc.nextInt();
+        System.out.println("Enter num2:");
+        int num2=sc.nextInt();
         SUM(num1,num2);
     }
 }
